@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Macondo", cursive, serif;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background: url(https://wallpapers.com/images/featured/movie-9pvmdtvz4cb0xl37.jpg);
+}
+
+#header{
+    display: flex;
+    height: 3em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.937);
+    font-size: larger;
+    font-weight:bolder;
+    color: rgb(160, 8, 112) ;
+}
+
+#listHeader{
+    display: flex;
+    gap: 20px;
+    text-decoration:none ;
+    list-style:none;
+}
+#listHeader li:hover ,#Sign:hover{
+    cursor: pointer;
+    color: rgb(0, 0, 0) ;
+    scale: 1.1;
+    transition: 0.35s;
+}
+
+#search{
+    height:3em ;
+    width: 30em;
+    border-radius: 10px;
+    padding: 5px;
+    border: 0.5px solid gray;
+}
+#container{
+    background-color: rgba(231, 134, 242, 0.137);
+    width: 100%;
+    min-height: 92vh;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 80px;
+}
+#movieCon{
+    padding: 20px;
+    background-color: aliceblue;
+    /* color: aliceblue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 580px;
+    width: 410px;
+    gap: 20px;
+}
+
+#movieCon img:hover{
+    scale: 1.05;
+    transition: 0.4s;
+}
+
+
+@media only screen and (max-width: 700px){
+    #search{
+        width: 200px;
+    }
+    #listHeader{
+        display: none;
+    }
+}
